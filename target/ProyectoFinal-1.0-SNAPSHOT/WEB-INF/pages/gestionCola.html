@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Gestión</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Favicons -->
+        <link href="assets/img/ProlIcon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+        <!-- Main CSS File -->
+        <link href="assets/css/main.css" rel="stylesheet">
+
+        <!-- =======================================================
+        * Template Name: Append
+        * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+        * Updated: Aug 07 2024 with Bootstrap v5.3.3
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+    </head>
+    <body>
+        <section id="hero" class="hero section dark-background">
+
+        <img src="assets/img/Prologo.jpg" alt="Prologo"/>
+
+        <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+              <h2>¿Qué desea hacer?</h2><br>
+              <table border="0">
+                  <thead>
+                      <tr>
+                        <th><form action="/ConsultarCanciones" method="GET">
+                            <div style='padding: 20px; background: rgba(255, 87, 51, 0.0); --accent-color: #ba4a00;' class="sign-up-form"><input type="submit" value="Consultar lista"></div>
+                        </form></th>
+                        <th><form action="BorrarCanciones" method="post">
+                            <div style='padding: 20px; background: rgba(255, 87, 51, 0.0); --accent-color: #ba4a00;' class="sign-up-form"><input type="submit" value="Borrar todas las canciones" onclick="return confirm('¿Estás seguro de que quieres borrar todas las canciones?');"></div>
+                        </form></th>
+                        <th><form action="/LogoutServlet" method="get">
+                            <div style='padding: 20px; background: rgba(255, 87, 51, 0.0); --accent-color: #ba4a00;' class="sign-up-form"><input type="submit" value="Volver"></div>
+                        </form></tr>
+                  </thead>
+              </table>
+
+            
+
+            
+          </div>
+        </div>
+        </div>
+        </section>
+    </body>
+</html>

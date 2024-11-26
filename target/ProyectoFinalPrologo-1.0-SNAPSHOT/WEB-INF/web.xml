@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <!-- Definición de Servlets -->
+    <servlet>
+        <servlet-name>ConsultarCancionesServlet</servlet-name>
+        <servlet-class>Servlets.ConsultarCancionesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistrarServlet</servlet-name>
+        <servlet-class>Servlets.RegistrarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BorrarCancionesServlet</servlet-name>
+        <servlet-class>Servlets.BorrarCancionesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BorrarUnaCancionServlet</servlet-name>
+        <servlet-class>Servlets.BorrarUnaCancionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>Servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BorrarUnaCancionServlet</servlet-name>
+        <url-pattern>/BorrarUnaCancionServlet</url-pattern>
+    </servlet-mapping>
+    <!-- Mapeo de las URLs a los servlets -->
+    <servlet-mapping>
+        <servlet-name>ConsultarCancionesServlet</servlet-name>
+        <url-pattern>/ConsultarCanciones</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrarServlet</servlet-name>
+        <url-pattern>/Registrar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BorrarCancionesServlet</servlet-name>
+        <url-pattern>/BorrarCanciones</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GestionColaServlet</servlet-name>
+        <servlet-class>Servlets.GestionColaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GestionColaServlet</servlet-name>
+        <url-pattern>/gestionCola</url-pattern>
+    </servlet-mapping>
+    <!-- Configuración de sesión -->
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            15
+        </session-timeout>
+    </session-config>
+</web-app>
